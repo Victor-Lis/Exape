@@ -35,7 +35,7 @@ async function share() {
     await navigator.share({
         title: "Recipes+",
         text: `Confira essas receitas incríveis`,
-        url: "index.html", // aqui deve ser o deploy
+        url: "https://exape-10-04-2025.netlify.app/",
     })
 }
 
