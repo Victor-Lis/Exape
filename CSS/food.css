@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Birthstone', sans-serif;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+
+    font-family: 'Birthstone', sans-serif;
+
+    width: 100%;
+}
+
+nav {
+    padding: 20px 5%;
+    width: 100%;
+    min-width: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px 5rem;
+    
+    background-color: #ffffff;
+}
+
+nav > a, nav > p {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s;
+    color: #333;
+
+    &:hover{
+        letter-spacing: 1px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+nav form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form input {
+    padding: 10px;
+    border: .5px solid #333;
+    border-radius: 2.5px;
+    outline: none;
+}
+
+nav form button {
+    border: .5px solid #333;
+    border-left: 0;
+    border-radius: 2.5px;
+    padding: 10px;
+}
+
+#search-form img{
+    width: 10px;
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 80%;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section > img {
+        width: 80%;
+        min-width: 220px;
+    }
+
+    section > aside {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+section > img {
+    width: 40%;
+}
+
+section > aside {
+    width: 50%;
+}
+
+section > aside > h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section > aside > button {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+section > aside > button:hover {
+    background-color: #0056b3;
+}

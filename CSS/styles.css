@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Birthstone', sans-serif;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+
+    font-family: 'Birthstone', sans-serif;
+
+    width: 100%;
+}
+
+nav {
+    padding: 20px 5%;
+    width: 100%;
+    min-width: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px 5rem;
+    
+    background-color: #ffffff;
+}
+
+nav > p {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s;
+    color: #333;
+
+    &:hover{
+        letter-spacing: 1px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s;
+    color: #333;
+
+    &:hover{
+        letter-spacing: 1px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+nav form { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form input {
+    padding: 10px;
+    border: .5px solid #333;
+    border-radius: 2.5px;
+    outline: none;
+}
+
+nav form button {
+    border: .5px solid #333;
+    border-left: 0;
+    border-radius: 2.5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav form button:hover {
+    background-color: #007bff25;
+}
+
+#search-form img{
+    width: 10px;
+}
+
+main {
+    padding: 20px 01%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 0 20px;
+}
+
+@media (max-width: 880px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+main > .latest-recipes { 
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main > .latest-recipes > h1 {
+    font-size: 3rem;
+    font-family: 'Birthstone', sans-serif;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem 10px;
+    padding: 0 2rem;
+}
+
+main section .card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+@media (max-width: 600px) {
+    main section .card{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+main section img {
+    border-radius: 10px;
+    width: 100%;
+    min-height: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.share {
+    width: 400px;
+    
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: justify;
+}
+
+@media (max-width: 880px) {
+    .share {
+        width: 100%;
+        margin-top: 3%;
+    }
+}
+
+.share .images {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.share .profile {
+    margin-top: 10px;
+
+    width: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    border-radius: 1000px;
+}
+
+.share .icons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin: 2px 0;
+}
+
+.share .icons a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s;
+    
+    width: 100%;
+
+    color: #333;
+    
+    margin: 5px 0;
+}
+
+.share .icons img{
+    width: 40px;
+    margin-right: 2px;
+}
+
+.share #email-signup-form {
+    width: 100%;
+    margin-top: auto;
+}
+
+.share #email-signup-form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.share #email-signup-form input {
+    width: calc(100%);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.share #email-signup-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.share #email-signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.separator{
+    content: '';
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+}
+
+.latest-recipes { 
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#secondary{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.all-recipes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem 10px;
+    padding: 0 2rem;
+    margin: 10px 0;
+}
+
+.all-recipes > .card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    width: 30%;
+    min-width: 300px;
+}
+
+@media (max-width: 600px) {
+    .all-recipes > .card{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+}
+
+.all-recipes > .card img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.all-recipes > .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.all-recipes > .card .content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.all-recipes > .card .content p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.focus {
+    border: 2px #0056b3 solid;
+    animation: foco 1s linear infinite;
+}
+
+@keyframes foco {
+    0% {
+        border: 2px #0056b3 solid;
+    }
+    50% {
+        border: 2px #90c5ff solid;
+    }
+    100% {
+        border: 2px #0056b3 solid;
+    }
+}

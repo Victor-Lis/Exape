@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exape</title>
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <script src="./JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>+Recipes</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#recipes">Receitas</a>
+            <p onclick="setElementFocus('#share')">Sobre mim</p>
+            <a onclick="setElementFocus('#email-input')">Contato</a>
+            <form id="search-form">
+                <input type="text" id="search-input"/>
+                <button><img src="./assets/icons/search.png"/></button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section class="latest-recipes">
+            <h1>Últimas Receitas</h1>
+            <section class="content">
+                <a class="card" href="./food.html">
+                    <img src="./assets/recipes/prato1.jpg"/>
+                    <p>Arroz e feijão</p>
+                </a>
+                <a class="card" href="./food.html">
+                    <img src="./assets/recipes/prato6.jpg"/>
+                    <p>Lasanha</p>
+                </a>
+                <a class="card" href="./food.html">
+                    <img src="./assets/recipes/prato3.jpg"/>
+                    <p>Executivo</p>
+                </a>
+            </section>
+        </section>
+        <aside class="share" id="share">
+            <h1>Bem vindo!</h1>
+            <div class="images">
+                <img class="profile" src="./assets/icons/Victor-Lis.jpg"/>
+            </div>
+            <p>Victor Lis. Programador em formação, apaixonado por tecnologia e inovação, formado técnico em DS.</p>
+            <div class="icons">
+                <a href="https://youtube.com" target="_blank">
+                    <img src="./assets/icons/youtube.png"/>
+                    Youtube
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/icons/instagram.png"/>
+                    Instagram
+                </a>
+            </div>
+            <form id="email-signup-form">
+                <label for="email">Receba nossas atualizações!</label>
+                <input id="email-input" type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Se inscreva!</button>
+            </form>
+        </aside>
+    </main>
+
+    <h1 id="secondary">Receitas gerais</h1>
+    <section class="all-recipes" id="recipes">
+        <a class="card" href="./food.html" id="arrozfeijao">
+            <img src="./assets/recipes/prato1.jpg"/>
+            <p>Arroz e feijão</p>
+        </a>
+        <a class="card" href="./food.html" id="macarrao">
+            <img src="./assets/recipes/prato5.jpg"/>
+            <p>Macarrão</p>
+        </a>
+        <a class="card" href="./food.html" id="executivo">
+            <img src="./assets/recipes/prato3.jpg"/>
+            <p>Executivo</p>
+        </a>
+        <a class="card" href="./food.html" id="nhoque">
+            <img src="./assets/recipes/prato7.jpg"/>
+            <p>Nhoque</p>
+        </a>
+        <a class="card" href="./food.html" id="lasanha">
+            <img src="./assets/recipes/prato6.jpg"/>
+            <p>Lasanha</p>
+        </a>
+    </section>
+</body>
+</html>
